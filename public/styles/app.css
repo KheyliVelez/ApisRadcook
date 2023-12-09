@@ -1,0 +1,242 @@
+body {
+    background-image: url('../images/fondo.jpg'); /* Usamos '../' para subir un nivel y luego acceder a la carpeta 'images' */
+    background-size: auto;
+
+}
+    /* En tu hoja de estilo CSS */
+.logo {
+    width: 95px; /* Ancho deseado */
+    height: 40px; /* Altura deseada */
+}
+/*Imagen logo en learn*/
+.custom-image {
+    width: 500px; /* Establece el ancho deseado */
+    height: 235px; /* Establece la altura deseada */
+}
+
+
+
+.receta {
+    width: 224px; /* Ancho deseado */
+    height: 170px;
+    display: block;
+    margin: 0 auto;
+}
+
+.retrato{
+    width: 150px; /* Ancho deseado */
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+
+}
+.bg-custom-color {
+    background-color: #fffded /* Reemplaza #FF0000 con el color que desees */
+}
+
+.custom-jumbotron {
+    max-width: 950px; /* Ajusta el valor de acuerdo a tu preferencia */
+    margin: 0 auto; /* Centra horizontalmente el jumbotron */
+}
+
+.bg-custom-beish{
+    background-color: #fffded
+}
+
+.custom-card {
+    /* Estilos personalizados para la tarjeta */
+    border: 1px solid #ccc; /* Por ejemplo, un borde personalizado */
+    /* Otros estilos personalizados si los necesitas */
+}
+
+.bg-custom-header {
+    background-color: #FF5733; /* Cambia este valor al color de encabezado personalizado que desees */
+    color: #FFFFFF; /* Cambia el color del texto del encabezado según tus preferencias */
+}
+
+.bg-custom-body {
+    background-color: #ffffff; /* Cambia este valor al color de fondo del cuerpo personalizado que desees */
+    color: #000000; /* Cambia el color del texto del cuerpo según tus preferencias */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*===================MENU==========================*/
+
+
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+    max-height:50rem !important;
+}
+
+/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
+
+
+
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
+
+
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#local {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+
+/*===========================SECCION EQUIPO MIAMI==================================*/
+#numeros-local{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div {
+    padding: 0 20px 0 0;
+    text-align:left;
+    height:48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+  }
+#numeros-local div:not(:first-child) {
+    padding-left:20px;
+  }
+
+#numeros-local p{
+    margin:0;
+}
+
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#bg-contactos{
+    position:relative;
+    top: -130px;
+}
+
+
+ #seccion-contacto{
+    background-color: #1b2a4e;
+    min-height:500px;
+    position:relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contenedor-formulario{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+/*=========================FOOTER================================*/
+
+footer {
+    background: #1b2a4e;
+    min-height: 100px;;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;
+   }
+
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:30%;
+        margin:auto;
+        padding-top:30px;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
+.card {
+    transition: transform 0.2s; /* Agrega una transición suave */
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Escala la tarjeta al 105% del tamaño original */
+  }

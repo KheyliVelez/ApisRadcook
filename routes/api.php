@@ -28,6 +28,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('login/v2', [LoginController::class, 'login']);
+
 Route::post('logout', [LoginController::class, 'logout']);
 
 Route::get('get_datauser', [UserController::class, 'dataUser']);

@@ -252,4 +252,8 @@ class RecipeController extends Controller
         return redirect()->route('recipes.index')
             ->with('success', 'Recipe deleted successfully');
     }
+
+    public function ingredients(string $message) {
+        return $message;
+    }
 }
